@@ -7,16 +7,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+	<link rel="icon" href="/images/logo.gif">
+          <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="bootstrap.min.js" />
 </head>
 <body>
+	<div class="centraprise-logo">
+                    <img src="/images/logo.gif" /><br>
+                </div>
 	<center>
 		<c:if test="${not empty error}">
       user name or password are invalid
 	</c:if>
 		<form action="${pageContext.request.contextPath}/login"
 			method="post">
-			UserName:<input type="text" name="username"><br />
-			Password:<input type="text" name="password"><br /> <input
+			UserName:<input class="form-control" type="text" name="username"><br />
+			Password:<input class="form-control" type="text" name="password"><br /> <input
 				type="submit" value="login">
 		</form>
 	</center>
